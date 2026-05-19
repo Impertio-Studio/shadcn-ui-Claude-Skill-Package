@@ -11,9 +11,9 @@
 | Phase 5 | Skill Creation | ✅ Done | 100% |
 | Phase 6 | Validation | ✅ Done (100% audit) | 100% |
 | Phase 6.5 | Discovery manifests + Keywords polish | ✅ Done | 100% |
-| Phase 7 | Publication | 🔄 In progress | 50% |
+| Phase 7 | Publication | ✅ Done (v1.0.0 published) | 100% |
 
-**Overall Progress**: 71% (Phase 1-5 complete, all 42 skills built and validated. Phase 6 validation + Phase 7 publication deferred per user "STOP after Phase 5")
+**Overall Progress**: 100% — v1.0.0 PUBLISHED at https://github.com/OpenAEC-Foundation/shadcn-ui-Claude-Skill-Package/releases/tag/v1.0.0
 
 ## Next Steps
 

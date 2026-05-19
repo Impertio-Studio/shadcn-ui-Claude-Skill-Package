@@ -5,11 +5,12 @@
 
 ## Status
 
-- **Phase** : Phase 5 COMPLETE. STOP per user instruction.
+- **Phase** : v1.0.0 PUBLISHED 2026-05-19
 - **Skills** : 42 / 42 (all categories complete)
-- **GitHub remote** : https://github.com/OpenAEC-Foundation/shadcn-ui-Claude-Skill-Package (to be created in Phase 7)
-- **Last commit** : 68f067e feat(skill): shadcn-agents-rsc-boundary-validator
-- **Compliance score** : n/a (validation runs in Phase 6, deferred)
+- **GitHub remote** : https://github.com/OpenAEC-Foundation/shadcn-ui-Claude-Skill-Package
+- **Release** : https://github.com/OpenAEC-Foundation/shadcn-ui-Claude-Skill-Package/releases/tag/v1.0.0
+- **Compliance score** : 100% (4/4 validators PASS)
+- **Topics** : agentskills, ai, claude, deterministic, openaec, react, shadcn, shadcn-ui, skills, tailwindcss, typescript
 
 ## What is done
 
