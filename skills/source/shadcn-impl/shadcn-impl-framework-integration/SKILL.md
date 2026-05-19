@@ -15,10 +15,10 @@ description: >
   three distinct ThemeProvider patterns (next-themes for Next.js, custom
   React Context for Vite/React-Router/TanStack Start, inline script for
   Astro).
-  Keywords: shadcn vite, shadcn nextjs, shadcn next.js app router,
-  shadcn next.js pages router, shadcn remix, shadcn react router v7,
+  Keywords: shadcn vite, shadcn nextjs, shadcn nextjs app router,
+  shadcn nextjs pages router, shadcn remix, shadcn react router v7,
   shadcn astro, shadcn tanstack start, framework integration, alias setup vite,
-  components.json next.js, components.json vite, rsc true, rsc false,
+  components json nextjs, components json vite, rsc true, rsc false,
   init template flag, -t next, -t vite, -t astro, -t start, -t react-router,
   ThemeProvider next-themes, ThemeProvider vite, dark mode astro inline script,
   suppressHydrationWarning, app router vs pages router, init for next.js,

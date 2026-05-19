@@ -1,16 +1,16 @@
 # shadcn ui : Claude Skill Package
 
 <p align="center">
-  <img src="docs/social-preview.png" alt="0 Deterministic Skills for shadcn ui" width="100%">
+  <img src="docs/social-preview.png" alt="42 Deterministic Skills for shadcn ui" width="100%">
 </p>
 
 ![Claude Code Ready](https://img.shields.io/badge/Claude_Code-Ready-blue?style=flat-square)
-![shadcn ui](https://img.shields.io/badge/shadcn_ui-evergreen-2026-0A66C2?style=flat-square)
-![Skills](https://img.shields.io/badge/Skills-0-green?style=flat-square)
+![shadcn ui](https://img.shields.io/badge/shadcn_ui-evergreen--2026-0A66C2?style=flat-square)
+![Skills](https://img.shields.io/badge/Skills-42-green?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)
 ![Agent Skills](https://img.shields.io/badge/agent--skills-compatible-purple?style=flat-square)
 
-**0 deterministic Claude AI skills for shadcn ui. Deterministic Claude skills for shadcn ui : component selection, variant API (cva), theming tokens, composition patterns**
+**42 deterministic Claude AI skills for shadcn ui evergreen-2026. Covers component selection, variant API (cva), theming tokens (HSL v3 + oklch v4), copy-not-install paradigm, react-hook-form + zod composition, TanStack DataTable recipe, RSC boundaries, and 7 anti-pattern skills for production debugging.**
 
 Built on the [Agent Skills](https://agentskills.org) open standard. Discoverable via npm-agentskills manifest and OpenAI Codex skill discovery.
 
@@ -29,12 +29,12 @@ Examples of guidance these skills enforce :
 
 | Category | Count | Purpose |
 |----------|:-----:|---------|
-| **core/** | 0 | Architecture, cross-cutting concerns |
-| **syntax/** | 0 | API syntax, code patterns, signatures |
-| **impl/** | 0 | Step-by-step development workflows |
-| **errors/** | 0 | Error handling, debugging, anti-patterns |
-| **agents/** | 0 | Validation, code generation, orchestration |
-| **Total** | **0** | |
+| **core/** | 6 | Architecture, CLI, stack, theming, registry, blocks |
+| **syntax/** | 18 | Per-component API patterns (Button, Dialog, Sheet, Drawer, Form, Field, Select, Combobox, Command, DataTable, Sidebar, Chart, Calendar, InputOTP, and more) |
+| **impl/** | 7 | End-to-end workflows (install, form validation, data-table recipe, theming, responsive modal, RSC boundaries, framework integration) |
+| **errors/** | 7 | Anti-patterns + debugging (CLI sync mismatch, styling conflicts, Radix controlled state, form state, Tailwind v3 -> v4 migration, react-day-picker v9, cmdk version drift) |
+| **agents/** | 4 | Validators (component selector, cva, form, RSC boundary) |
+| **Total** | **42** | |
 
 See [INDEX.md](INDEX.md) for the complete skill catalog with descriptions and dependency graph.
 

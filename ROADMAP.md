@@ -9,8 +9,9 @@
 | Phase 3 | Masterplan Refinement | ✅ Done | 100% |
 | Phase 4 | Topic-Specific Research | ⏭ Skipped for B1 (D-008), per-batch from B3+ | 7% |
 | Phase 5 | Skill Creation | ✅ Done | 100% |
-| Phase 6 | Validation | ⏳ Pending | 0% |
-| Phase 7 | Publication | ⏳ Pending | 0% |
+| Phase 6 | Validation | ✅ Done (100% audit) | 100% |
+| Phase 6.5 | Discovery manifests + Keywords polish | ✅ Done | 100% |
+| Phase 7 | Publication | 🔄 In progress | 50% |
 
 **Overall Progress**: 71% (Phase 1-5 complete, all 42 skills built and validated. Phase 6 validation + Phase 7 publication deferred per user "STOP after Phase 5")
 

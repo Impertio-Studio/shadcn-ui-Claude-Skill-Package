@@ -1,7 +1,7 @@
 {
   "name": "@openaec/shadcn-ui-claude-skill-package",
   "version": "1.0.0",
-  "description": "0 deterministic Claude AI skills for shadcn ui evergreen-2026",
+  "description": "42 deterministic Claude AI skills for shadcn ui evergreen-2026",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -14,10 +14,181 @@
     "claude-skills",
     "claude-code",
     "shadcn",
-    "typescript","react","tailwind",
+    "typescript",
+    "react",
+    "tailwind",
     "openaec"
   ],
   "agents": {
-    "skills": []
+    "skills": [
+      {
+        "name": "shadcn-agents-component-selector",
+        "path": "./skills/source/shadcn-agents/shadcn-agents-component-selector"
+      },
+      {
+        "name": "shadcn-agents-cva-validator",
+        "path": "./skills/source/shadcn-agents/shadcn-agents-cva-validator"
+      },
+      {
+        "name": "shadcn-agents-form-validator",
+        "path": "./skills/source/shadcn-agents/shadcn-agents-form-validator"
+      },
+      {
+        "name": "shadcn-agents-rsc-boundary-validator",
+        "path": "./skills/source/shadcn-agents/shadcn-agents-rsc-boundary-validator"
+      },
+      {
+        "name": "shadcn-core-architecture",
+        "path": "./skills/source/shadcn-core/shadcn-core-architecture"
+      },
+      {
+        "name": "shadcn-core-blocks",
+        "path": "./skills/source/shadcn-core/shadcn-core-blocks"
+      },
+      {
+        "name": "shadcn-core-cli",
+        "path": "./skills/source/shadcn-core/shadcn-core-cli"
+      },
+      {
+        "name": "shadcn-core-registry",
+        "path": "./skills/source/shadcn-core/shadcn-core-registry"
+      },
+      {
+        "name": "shadcn-core-stack",
+        "path": "./skills/source/shadcn-core/shadcn-core-stack"
+      },
+      {
+        "name": "shadcn-core-theming",
+        "path": "./skills/source/shadcn-core/shadcn-core-theming"
+      },
+      {
+        "name": "shadcn-errors-cli-sync-mismatch",
+        "path": "./skills/source/shadcn-errors/shadcn-errors-cli-sync-mismatch"
+      },
+      {
+        "name": "shadcn-errors-cmdk-version-drift",
+        "path": "./skills/source/shadcn-errors/shadcn-errors-cmdk-version-drift"
+      },
+      {
+        "name": "shadcn-errors-form-state",
+        "path": "./skills/source/shadcn-errors/shadcn-errors-form-state"
+      },
+      {
+        "name": "shadcn-errors-radix-controlled",
+        "path": "./skills/source/shadcn-errors/shadcn-errors-radix-controlled"
+      },
+      {
+        "name": "shadcn-errors-react-day-picker-v9",
+        "path": "./skills/source/shadcn-errors/shadcn-errors-react-day-picker-v9"
+      },
+      {
+        "name": "shadcn-errors-styling-conflicts",
+        "path": "./skills/source/shadcn-errors/shadcn-errors-styling-conflicts"
+      },
+      {
+        "name": "shadcn-errors-tailwind-v3-v4-migration",
+        "path": "./skills/source/shadcn-errors/shadcn-errors-tailwind-v3-v4-migration"
+      },
+      {
+        "name": "shadcn-impl-component-install",
+        "path": "./skills/source/shadcn-impl/shadcn-impl-component-install"
+      },
+      {
+        "name": "shadcn-impl-data-table",
+        "path": "./skills/source/shadcn-impl/shadcn-impl-data-table"
+      },
+      {
+        "name": "shadcn-impl-form-validation",
+        "path": "./skills/source/shadcn-impl/shadcn-impl-form-validation"
+      },
+      {
+        "name": "shadcn-impl-framework-integration",
+        "path": "./skills/source/shadcn-impl/shadcn-impl-framework-integration"
+      },
+      {
+        "name": "shadcn-impl-responsive-dialog-drawer",
+        "path": "./skills/source/shadcn-impl/shadcn-impl-responsive-dialog-drawer"
+      },
+      {
+        "name": "shadcn-impl-rsc-vs-client-boundaries",
+        "path": "./skills/source/shadcn-impl/shadcn-impl-rsc-vs-client-boundaries"
+      },
+      {
+        "name": "shadcn-impl-theming-custom",
+        "path": "./skills/source/shadcn-impl/shadcn-impl-theming-custom"
+      },
+      {
+        "name": "shadcn-syntax-button",
+        "path": "./skills/source/shadcn-syntax/shadcn-syntax-button"
+      },
+      {
+        "name": "shadcn-syntax-calendar-datepicker",
+        "path": "./skills/source/shadcn-syntax/shadcn-syntax-calendar-datepicker"
+      },
+      {
+        "name": "shadcn-syntax-chart",
+        "path": "./skills/source/shadcn-syntax/shadcn-syntax-chart"
+      },
+      {
+        "name": "shadcn-syntax-command",
+        "path": "./skills/source/shadcn-syntax/shadcn-syntax-command"
+      },
+      {
+        "name": "shadcn-syntax-dialog",
+        "path": "./skills/source/shadcn-syntax/shadcn-syntax-dialog"
+      },
+      {
+        "name": "shadcn-syntax-drawer",
+        "path": "./skills/source/shadcn-syntax/shadcn-syntax-drawer"
+      },
+      {
+        "name": "shadcn-syntax-field",
+        "path": "./skills/source/shadcn-syntax/shadcn-syntax-field"
+      },
+      {
+        "name": "shadcn-syntax-form",
+        "path": "./skills/source/shadcn-syntax/shadcn-syntax-form"
+      },
+      {
+        "name": "shadcn-syntax-input-otp",
+        "path": "./skills/source/shadcn-syntax/shadcn-syntax-input-otp"
+      },
+      {
+        "name": "shadcn-syntax-layout-primitives",
+        "path": "./skills/source/shadcn-syntax/shadcn-syntax-layout-primitives"
+      },
+      {
+        "name": "shadcn-syntax-menu-primitives",
+        "path": "./skills/source/shadcn-syntax/shadcn-syntax-menu-primitives"
+      },
+      {
+        "name": "shadcn-syntax-popover-tooltip-hovercard",
+        "path": "./skills/source/shadcn-syntax/shadcn-syntax-popover-tooltip-hovercard"
+      },
+      {
+        "name": "shadcn-syntax-selectors",
+        "path": "./skills/source/shadcn-syntax/shadcn-syntax-selectors"
+      },
+      {
+        "name": "shadcn-syntax-sheet",
+        "path": "./skills/source/shadcn-syntax/shadcn-syntax-sheet"
+      },
+      {
+        "name": "shadcn-syntax-sidebar",
+        "path": "./skills/source/shadcn-syntax/shadcn-syntax-sidebar"
+      },
+      {
+        "name": "shadcn-syntax-table",
+        "path": "./skills/source/shadcn-syntax/shadcn-syntax-table"
+      },
+      {
+        "name": "shadcn-syntax-toast-sonner",
+        "path": "./skills/source/shadcn-syntax/shadcn-syntax-toast-sonner"
+      },
+      {
+        "name": "shadcn-syntax-variant-cva",
+        "path": "./skills/source/shadcn-syntax/shadcn-syntax-variant-cva"
+      }
+    ]
   }
 }

@@ -34,8 +34,8 @@ description: >
   `npm ls cmdk` and the shadcn-wrapper expected version via the
   registry endpoint), version compatibility matrix (cmdk 0.2.x =
   `(value, search) => number` filter, no `keywords` Item prop ; cmdk
-  1.0.0+ = `(value, search, keywords) => number` filter, `keywords:
-  string[]` Item prop, CommandList becomes REQUIRED parent of every
+  one zero plus = `(value, search, keywords) => number` filter, keywords
+  prop as string array on Item, CommandList becomes REQUIRED parent of every
   Item or render crashes with the Symbol.iterator TypeError), fix
   strategies (pin cmdk in package.json to exact version, re-run
   `shadcn add command --overwrite` to refresh the wrapper to the
@@ -54,12 +54,12 @@ description: >
   onOpenAutoFocus preventDefault, shouldFilter behavior, shouldFilter
   false no results, manual filtering shouldFilter, CommandLoading
   missing, CommandLoading not exported shadcn, import CommandLoading
-  from cmdk, cmdk version mismatch, cmdk 1.0.0 breaking change,
-  cmdk 0.2.1 pin, npm ls cmdk, command not filtering, command palette
+  from cmdk, cmdk version mismatch, cmdk one zero breaking change,
+  cmdk legacy pin, npm ls cmdk, command not filtering, command palette
   not filtering, combobox not filtering, drawer cmdk focus, why my
   command palette broken, why my combobox returns full list, why does
   uppercase not match cmdk, CommandItem outside CommandList TypeError,
-  Symbol.iterator cmdk crash, shadcn add command overwrite, cmdk
+  Symbol iterator cmdk crash, shadcn add command overwrite, cmdk
   package json pin, command-score case insensitive, data-value cmdk
   attribute, keywords prop CommandItem, third argument filter ignored,
   command palette dropdown.
