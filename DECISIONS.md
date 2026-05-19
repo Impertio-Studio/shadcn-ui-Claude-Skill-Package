@@ -77,6 +77,16 @@ Numbered decisions (D-XXX) with rationale. Immutable once recorded — new decis
 
 ---
 
+## D-010: In-process Agent dispatch for Phase 5 B2-B14 (one-time deviation)
+
+- **Date**: 2026-05-19
+- **Decision**: Use in-process Agent tool (3 parallel opus agents per batch) for Phase 5 batches B2-B14 instead of tmux-orchestration workers.
+- **Rationale**: tmux workers worker-1/2/3 are shared via cross-workspace orchestration with TailwindCSS-Claude-Skill-Package. External orchestrator controls dispatch timing for those workers, making predictable shadcn batch progression impossible in this session. In-process Agent tool delivers same parallel-execution model (3 agents per batch, separate file-scopes) without the cross-workspace contention.
+- **Consequence**: B2 onwards uses Agent tool. tmo task tracking deprecated for these batches (replaced by TaskCreate). Quality-gate (APPROVE / RE-INSTRUCT / REPLACE) still mandatory per batch. File-scope isolation still enforced via per-skill output directory. Supersedes D-009 for B2-B14 only.
+- **Re-evaluate**: D-009 (tmux backbone) remains valid for future skill packages where workers are not externally shared.
+
+---
+
 ## D-009: tmux-orchestration as Phase 5 execution backbone
 
 - **Date**: 2026-05-19

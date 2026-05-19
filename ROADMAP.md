@@ -8,11 +8,11 @@
 | Phase 2 | Deep Research (Vooronderzoek) | ✅ Done | 100% |
 | Phase 3 | Masterplan Refinement | ✅ Done | 100% |
 | Phase 4 | Topic-Specific Research | ⏭ Skipped for B1 (D-008), per-batch from B3+ | 7% |
-| Phase 5 | Skill Creation | 🔄 In progress (B1 done, B2-B14 pending) | 7% |
+| Phase 5 | Skill Creation | 🔄 In progress (B1+B2 done, B3-B14 pending) | 14% |
 | Phase 6 | Validation | ⏳ Pending | 0% |
 | Phase 7 | Publication | ⏳ Pending | 0% |
 
-**Overall Progress**: 36% (Phase 1-3 complete, B1 skill-creation done, 3/42 skills built)
+**Overall Progress**: 43% (Phase 1-3 complete, B1+B2 skill-creation done, 6/42 skills built, core/ category 100%)
 
 ## Next Steps
 
@@ -28,14 +28,22 @@
 
 | Category | Estimated | Created | Validated |
 |----------|-----------|---------|-----------|
-| core/ | 6 | 3 | 3 |
+| core/ | 6 | 6 | 6 |
 | syntax/ | 18 | 0 | 0 |
 | impl/ | 7 | 0 | 0 |
 | errors/ | 7 | 0 | 0 |
 | agents/ | 4 | 0 | 0 |
-| **Total** | **42** | **3** | **3** |
+| **Total** | **42** | **6** | **6** |
 
 ## Changelog
+
+### Phase 5 : Batch 2 done (2026-05-19)
+- 3 shadcn-core skills built via in-process Agent dispatch (D-010 deviation)
+- shadcn-core-theming (SHA 1dbce94, 325 lines + 3 refs, full token catalog v3+v4)
+- shadcn-core-registry (SHA 4ff2558, 380 lines + 3 refs, components.json schema deep-dive)
+- shadcn-core-blocks (SHA f1fdb86, 295 lines + 3 refs, blocks as distinct distribution surface)
+- All validate-frontmatter + validate-line-count + em-dash check: OK
+- core/ category 100% complete (6/6)
 
 ### Phase 5 : Batch 1 done (2026-05-19)
 - 3 shadcn-core skills built + committed
