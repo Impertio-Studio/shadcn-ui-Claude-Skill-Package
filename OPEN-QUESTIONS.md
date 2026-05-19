@@ -4,33 +4,13 @@
 
 ## Active Questions
 
-### Q-001 : {{QUESTION_SUBJECT}}
-
-- **Status** : OPEN
-- **Question** : {{QUESTION_BODY}}
-- **Impact** : {{IMPACT_DESCRIPTION}}
-- **Blocks** : {{WHICH_PHASE_OR_SKILL}}
-- **Requested at** : 2026-05-19
-
-### Q-002 : {{QUESTION_SUBJECT}}
-
-- **Status** : OPEN
-- **Question** : {{QUESTION_BODY}}
-- **Impact** : {{IMPACT_DESCRIPTION}}
-- **Blocks** : {{WHICH_PHASE_OR_SKILL}}
-- **Requested at** : 2026-05-19
+(none : Phase 2 deep research can proceed without blocking decisions)
 
 ---
 
 ## Answered Questions
 
-### Q-XXX : {{QUESTION_SUBJECT}}
-
-- **Status** : RESOLVED (2026-05-19)
-- **Question** : {{QUESTION_BODY}}
-- **Answer** : {{USER_ANSWER}}
-- **Action taken** : {{WHAT_WAS_DONE}}
-- **Recorded in** : DECISIONS.md D-XXX
+(none yet)
 
 ---
 

@@ -16,19 +16,14 @@ Built on the [Agent Skills](https://agentskills.org) open standard. Discoverable
 
 ## Why This Exists
 
-Without skills, Claude lacks deterministic guidance for shadcn ui patterns:
+Without skills, Claude lacks deterministic guidance for shadcn ui patterns. Concrete examples will be filled in after Phase 5 skill creation.
 
-```{{LANGUAGE}}
-// Wrong : {{WRONG_PATTERN_DESCRIPTION}}
-{{WRONG_CODE_EXAMPLE}}
-```
+Examples of guidance these skills enforce :
 
-With this skill package, Claude produces correct patterns:
-
-```{{LANGUAGE}}
-// Correct : {{CORRECT_PATTERN_DESCRIPTION}}
-{{CORRECT_CODE_EXAMPLE}}
-```
+- shadcn ui is CLI-driven, NOT a library. Components are copied via `npx shadcn@latest add <name>`.
+- Class merging ALWAYS via `cn()` helper (clsx + tailwind-merge), NEVER raw string concat.
+- Form state ALWAYS via react-hook-form Controller + zodResolver, NEVER ad-hoc useState.
+- Theming tokens use HSL space-separated CSS custom properties, NEVER comma-separated.
 
 ## What's Inside
 
