@@ -64,3 +64,22 @@ Numbered decisions (D-XXX) with rationale. Immutable once recorded — new decis
 - **Decision**: Publish all skill packages under the OpenAEC Foundation GitHub organization.
 - **Rationale**: Centralized, consistent branding. Community ownership. Discoverability.
 - **Consequence**: All repos follow OpenAEC naming conventions and include social preview banners with OpenAEC branding.
+
+---
+
+## D-008: Skip Phase 4 topic-research for foundational core batches (B1)
+
+- **Date**: 2026-05-19
+- **Decision**: Skip Phase 4 topic-research for Batch 1 (`shadcn-core-architecture`, `shadcn-core-stack`, `shadcn-core-cli`).
+- **Rationale**: vooronderzoek-shadcn.md (5613 words) extensively covers architecture (§1), stack composition (§1 table), and CLI surface (§4). Per BOOTSTRAP §6.3 skip-criteria ("vooronderzoek >40 doc-pages + helder onderbouwd: skip Phase 4 voor die batch"), additional topic-research adds no information. Workers reference vooronderzoek directly + WebFetch primary URLs as needed.
+- **Consequence**: B1 workers receive bundle pointing to vooronderzoek-shadcn.md sections + SOURCES.md primary URLs. NO `docs/research/topic-research/shadcn-core-*-research.md` files for B1.
+- **Re-evaluate**: Phase 4 topic-research re-enabled from B3 onwards (component-specific syntax skills) where vooronderzoek depth per component is shallower.
+
+---
+
+## D-009: tmux-orchestration as Phase 5 execution backbone
+
+- **Date**: 2026-05-19
+- **Decision**: All Phase 5 skill creation runs via tmux-orchestration skill with 3 persistent workers (skill-builder role) in VS Code panels.
+- **Rationale**: BOOTSTRAP §6 hard requirement. Persistent workers with file-scope-isolation + quality-gate-loop is proven scalable (Blender-Bonsai 73 skills, Frappe 61 skills). In-process Agent tool lacks file-scope-lock guarantees.
+- **Consequence**: state/ dir gitignored, roles/skill-builder.md in state/, .vscode/tasks.json tracked for shared spawn config, workers respond in Nederlands per user-language setting.
