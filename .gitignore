@@ -5,6 +5,19 @@ CLAUDE.local.md
 .claude/
 *.code-workspace
 
+# Internal dev artifacts (kept local, not published)
+CLAUDE.md
+ROADMAP.md
+HANDOFF.md
+WAY_OF_WORK.md
+LESSONS.md
+DECISIONS.md
+REQUIREMENTS.md
+OPEN-QUESTIONS.md
+START-PROMPT.md
+docs/masterplan/
+docs/research/
+
 # tmux-orchestration runtime state
 state/
 .tmo/
