@@ -399,7 +399,7 @@ behind an Authorization header.
 
 ```bash
 # Set the token in your shell or .env :
-export REGISTRY_TOKEN="ghp_xxxxxxxxxxxxxxxxxxxx"
+export REGISTRY_TOKEN="EXAMPLE_PAT_DO_NOT_COMMIT_REAL_SECRETS"
 ```
 
 Edit `components.json` :

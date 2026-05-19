@@ -273,7 +273,7 @@ not embed secret values directly.
     "@private": {
       "url": "https://registry.private.io/{name}.json",
       "headers": {
-        "Authorization": "Bearer sk_live_8f7a3..."     // LEAKED on commit
+        "Authorization": "Bearer EXAMPLE_TOKEN_DO_NOT_COMMIT_REAL_SECRETS"     // LEAKED on commit
       }
     }
   }
