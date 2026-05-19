@@ -8,34 +8,54 @@
 | Phase 2 | Deep Research (Vooronderzoek) | ✅ Done | 100% |
 | Phase 3 | Masterplan Refinement | ✅ Done | 100% |
 | Phase 4 | Topic-Specific Research | ⏭ Skipped for B1 (D-008), per-batch from B3+ | 7% |
-| Phase 5 | Skill Creation | 🔄 In progress (B1+B2 done, B3-B14 pending) | 14% |
+| Phase 5 | Skill Creation | ✅ Done | 100% |
 | Phase 6 | Validation | ⏳ Pending | 0% |
 | Phase 7 | Publication | ⏳ Pending | 0% |
 
-**Overall Progress**: 43% (Phase 1-3 complete, B1+B2 skill-creation done, 6/42 skills built, core/ category 100%)
+**Overall Progress**: 71% (Phase 1-5 complete, all 42 skills built and validated. Phase 6 validation + Phase 7 publication deferred per user "STOP after Phase 5")
 
 ## Next Steps
 
-1. Phase 5 batch B2 : core-theming, core-registry, core-blocks
-   - 3 tmux workers via skill-builder role
-   - QG every reply
-2. Phase 5 batch B3+ : syntax skills (require Phase 4 topic-research per BOOTSTRAP §6.3, NOT skipped from B3 onwards)
-3. Continue through B14 (agents)
+Phase 5 complete. STOP per user instruction.
 
-**External orchestrator note** : workers (worker-1/2/3 tmux sessions) are shared across shadcn ui + Tailwind CSS skill packages via cross-workspace orchestration. B1 was completed by external dispatch. Coordinate with main orchestrator session for B2 dispatch timing.
+Future sessions (when user requests):
+1. Phase 6 : Validation
+   - Full automated validation suite (validate-frontmatter / validate-line-count / validate-structure / validate-language / validate-emdash / count-skills / generate-audit-report)
+   - Compliance audit P-010 (score >= 90% target)
+   - Functional sample-test min 1 skill per category
+2. Phase 6.5 : Discovery manifests + Keywords polish
+   - generate-manifest.js (package.json agents.skills[] + agents/openai.yaml)
+   - generate-index.js (INDEX.md catalog regeneration)
+   - Keywords polish pass
+   - em-dash sweep
+3. Phase 7 : Publication
+   - README finalize + banner
+   - GitHub remote create under OpenAEC Foundation
+   - v1.0.0 release tag
+   - Repository topics
 
 ## Skill Summary
 
 | Category | Estimated | Created | Validated |
 |----------|-----------|---------|-----------|
 | core/ | 6 | 6 | 6 |
-| syntax/ | 18 | 0 | 0 |
-| impl/ | 7 | 0 | 0 |
-| errors/ | 7 | 0 | 0 |
-| agents/ | 4 | 0 | 0 |
-| **Total** | **42** | **6** | **6** |
+| syntax/ | 18 | 18 | 18 |
+| impl/ | 7 | 7 | 7 |
+| errors/ | 7 | 7 | 7 |
+| agents/ | 4 | 4 | 4 |
+| **Total** | **42** | **42** | **42** |
 
 ## Changelog
+
+### Phase 5 : ALL 14 batches complete (2026-05-19)
+- 42 skills built across 5 categories (core 6 / syntax 18 / impl 7 / errors 7 / agents 4)
+- B1-B2 (core): architecture/stack/cli/theming/registry/blocks
+- B3-B8 (syntax): variant-cva/button/form/field/dialog/sheet/drawer/selectors/command/menu-primitives/popover-tooltip-hovercard/toast-sonner/table/chart/calendar-datepicker/sidebar/layout-primitives/input-otp
+- B9-B11 (impl): component-install/form-validation/data-table/theming-custom/responsive-dialog-drawer/rsc-vs-client-boundaries/framework-integration
+- B11-B13 (errors): cli-sync-mismatch/styling-conflicts/radix-controlled/form-state/tailwind-v3-v4-migration/react-day-picker-v9/cmdk-version-drift
+- B13-B14 (agents): component-selector/cva-validator/form-validator/rsc-boundary-validator
+- All 42 SKILL.md files validated: <500 lines, folded scalar YAML, "Use when..." opener, Keywords 8+ terms, no em-dash, English-only, deterministic
+- 42 commits (one per skill) + 4 status-sync commits
 
 ### Phase 5 : Batch 2 done (2026-05-19)
 - 3 shadcn-core skills built via in-process Agent dispatch (D-010 deviation)

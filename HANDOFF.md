@@ -5,59 +5,51 @@
 
 ## Status
 
-- **Phase** : Phase 5 in progress (Batch 1 done, B2-B14 pending)
-- **Skills** : 3 / 42 (B1 complete : architecture, stack, cli)
-- **GitHub remote** : https://github.com/OpenAEC-Foundation/shadcn-ui-Claude-Skill-Package (to be created)
-- **Last commit** : a04b7e5 feat(skill): shadcn-core-cli
-- **Compliance score** : n/a (validation runs in Phase 6)
+- **Phase** : Phase 5 COMPLETE. STOP per user instruction.
+- **Skills** : 42 / 42 (all categories complete)
+- **GitHub remote** : https://github.com/OpenAEC-Foundation/shadcn-ui-Claude-Skill-Package (to be created in Phase 7)
+- **Last commit** : 68f067e feat(skill): shadcn-agents-rsc-boundary-validator
+- **Compliance score** : n/a (validation runs in Phase 6, deferred)
 
 ## What is done
 
 - Phase 1 raw masterplan + template substitution (commit e7e960f)
 - Phase 2 deep research vooronderzoek-shadcn.md (5613 words, 59 components, commit 1dc9e31)
 - Phase 3 masterplan refinement (20 decisions, 42 skills, 14 batches, commit 53e2377)
-- Phase 5 Batch 1 : shadcn-core-architecture (e2ef290), shadcn-core-stack (2c54e29), shadcn-core-cli (a04b7e5)
-- All B1 SKILL.md < 500 lines, validate-frontmatter + validate-line-count + em-dash check : OK
-- DECISIONS.md D-008 + D-009 logged
+- Phase 5 ALL 14 batches done : 42 skills built and validated
+- All SKILL.md < 500 lines, validate-frontmatter + validate-line-count + em-dash check OK
+- DECISIONS.md D-008 + D-009 + D-010 logged
 
 ## What is open
 
-- Phase 5 B2 : core-theming, core-registry, core-blocks
-- Phase 5 B3-B8 : syntax skills (18 total, 6 batches)
-- Phase 5 B9-B11 : impl skills (7 total, 3 batches)
-- Phase 5 B12-B14 : errors + agents (11 total, 3 batches)
-- Phase 6/7 : validation + publication (deferred per user-instruction "STOP na Phase 5")
+- Phase 6 : Validation + audit (deferred per user "STOP na Phase 5")
+- Phase 6.5 : Discovery manifests + Keywords polish
+- Phase 7 : Publication (GitHub remote, social preview, v1.0.0 release)
 
 ## Next-session entry point
 
 Open this workspace in VS Code and run :
 
 ```
-Lees BOOTSTRAP-RUNBOOK.md van Skill-Package-Workflow-Template en hervat Phase 5 vanaf Batch 2.
+Lees BOOTSTRAP-RUNBOOK.md van Skill-Package-Workflow-Template en voer Phase 6 (validation) + 6.5 (discovery manifests) + 7 (publication) uit.
 ```
 
-## Active orchestration (Phase 5)
-
-**External orchestrator running** : workers worker-1/2/3 are shared via cross-workspace tmux-orchestration with TailwindCSS-Claude-Skill-Package. B1 was completed via that orchestrator. Workers currently dispatching Tailwind batches.
-
-| Worker | Last skill done | Status | tmo task ID |
-|--------|-----------------|--------|-------------|
-| worker-1 | shadcn-core-architecture | working on Tailwind tasks | T-1 done |
-| worker-2 | shadcn-core-stack | working on Tailwind tasks | T-2 done |
-| worker-3 | shadcn-core-cli | working on Tailwind tasks | T-3 done |
-
-## Decisions made this session (DECISIONS.md)
+## Decisions made (DECISIONS.md)
 
 - D-008 : Skip Phase 4 topic-research for foundational core batch B1 (vooronderzoek already covers extensively)
-- D-009 : tmux-orchestration as Phase 5 execution backbone
+- D-009 : tmux-orchestration as Phase 5 execution backbone (initially planned)
+- D-010 : In-process Agent dispatch for Phase 5 B2-B14 (one-time deviation, external orchestrator contention)
 
-## How to resume B2
+## Phase 6+ checklist (next session)
 
-Option A : continue via existing tmux workers (if external orchestrator dispatches shadcn batches)
-Option B : dispatch B2 via in-process Agent tool (3 parallel opus agents, faster, no tmux overhead)
-Option C : kill external orchestration + re-spawn dedicated shadcn workers
-
-Recommended : Option B for predictable per-session progress.
+1. Run automated validation suite (5 validators from Skill-Package-Workflow-Template/scripts/)
+2. Methodology audit (P-010) target score >=90%
+3. Generate manifests (package.json agents.skills[] + agents/openai.yaml)
+4. Generate INDEX.md
+5. Keywords polish pass
+6. README finalize + social preview banner (1280x640px)
+7. gh repo create OpenAEC-Foundation/shadcn-ui-Claude-Skill-Package + push
+8. v1.0.0 tag + GitHub release
 
 ## Decisions blocking next step
 
