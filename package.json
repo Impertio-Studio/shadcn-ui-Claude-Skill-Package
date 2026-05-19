@@ -1,0 +1,23 @@
+{
+  "name": "@openaec/shadcn-ui-claude-skill-package",
+  "version": "1.0.0",
+  "description": "0 deterministic Claude AI skills for shadcn ui evergreen-2026",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OpenAEC-Foundation/shadcn-ui-Claude-Skill-Package"
+  },
+  "homepage": "https://github.com/OpenAEC-Foundation/shadcn-ui-Claude-Skill-Package#readme",
+  "keywords": [
+    "agent-skills",
+    "agentskills",
+    "claude-skills",
+    "claude-code",
+    "shadcn",
+    "typescript","react","tailwind",
+    "openaec"
+  ],
+  "agents": {
+    "skills": []
+  }
+}

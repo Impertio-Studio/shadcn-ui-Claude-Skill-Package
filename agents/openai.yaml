@@ -1,0 +1,7 @@
+# OpenAI Codex skill discovery
+# https://platform.openai.com/docs/codex/skills
+name: shadcn-ui-claude-skill-package
+description: >
+  0 deterministic Claude AI skills for shadcn ui evergreen-2026.
+  Deterministic Claude skills for shadcn ui : component selection, variant API (cva), theming tokens, composition patterns
+skills_directory: ./skills/source
