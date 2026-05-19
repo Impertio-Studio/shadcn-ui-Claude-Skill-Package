@@ -245,7 +245,7 @@ that do not have a substitution point.
     "@private": {
       "url": "https://api.company.com/registry/{name}.json",
       "headers": {
-        "Authorization": "Bearer sk_live_7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c"
+        "Authorization": "Bearer EXAMPLE_TOKEN_DO_NOT_COMMIT_REAL_SECRETS"
       }
     }
   }
