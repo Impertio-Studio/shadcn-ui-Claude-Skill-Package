@@ -157,7 +157,7 @@ You keep up with upstream AND retain customizations. Workflow :
    manually copy the upstream lines from the diff output and apply
    them in your editor with three-way reasoning (upstream / yours /
    merged).
-5. Commit with subject "chore: sync <name> with shadcn@latest" and
+5. Commit with a subject such as "sync <name> with shadcn@latest", in your repository's commit format, and
    body listing both upstream changes pulled and local changes
    preserved.
 

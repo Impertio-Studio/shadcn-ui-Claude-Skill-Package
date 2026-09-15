@@ -43,7 +43,7 @@ git status                                           # must be clean
 git stash push -m "pre-shadcn-sync" || true          # stash if needed
 
 # 2. New branch.
-git switch -c chore/shadcn-sync-$(date +%Y%m%d)
+git switch -c <branch>   # name it per your repository's branch convention
 
 # 3. Probe : list what would change, no writes.
 pnpm dlx shadcn@latest add <name> --dry-run
@@ -64,7 +64,7 @@ git diff HEAD -- components/ui/<name>.tsx
 # 7. Run tests, then commit.
 pnpm test
 git add components/ui/<name>.tsx
-git commit -m "chore: sync <name> with shadcn@latest"
+git commit -m "<sync <name> with shadcn@latest, in your repository's commit format>"
 ```
 
 The `--dry-run` step is cheap and catches one common surprise : `add
@@ -197,7 +197,7 @@ Heuristics :
 
 - 1 commit total -> file likely never edited beyond `add`.
 - Commits authored by mixed people, multiple over time -> customized.
-- Last commit message starts with `chore: re-add` or `chore: sync
+- Last commit message mentions `re-add` or `sync
   shadcn` -> the file has been re-CLI-written ; check if any
   customization was intentionally re-applied after.
 
