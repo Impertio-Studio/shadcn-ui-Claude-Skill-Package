@@ -266,7 +266,7 @@ pnpm dlx shadcn@latest migrate icons --list      # see options
 pnpm dlx shadcn@latest migrate icons             # run interactively first time
 git diff HEAD                                    # review
 pnpm test
-git add -A && git commit -m "chore: migrate icon library"
+git add -A && git commit -m "<migrate icon library>"
 git stash pop
 ```
 
@@ -297,7 +297,7 @@ the fork creation. Run a project-wide replace :
 git grep -l '@/components/ui/sidebar' | xargs sed -i 's|@/components/ui/sidebar|@/lib/components/sidebar/sidebar|g'
 git diff --stat
 pnpm test
-git add -A && git commit -m "refactor: fork Sidebar to lib/components/sidebar"
+git add -A && git commit -m "<fork Sidebar to lib/components/sidebar>"
 ```
 
 Verify with a grep that no consumer still imports from the upstream

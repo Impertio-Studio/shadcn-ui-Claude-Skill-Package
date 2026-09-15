@@ -164,7 +164,7 @@ git diff <commit-when-block-was-added> -- app/dashboard/ components/dashboard/
 
 # 4. commit the merge separately from any unrelated work
 git add app/dashboard/ components/dashboard/
-git commit -m "feat(dashboard): merge upstream dashboard-01 chart-variant"
+git commit -m "<merge upstream dashboard-01 chart-variant>"
 ```
 
 ALWAYS pin the working state of block files in git immediately after `add`. ALWAYS verify https://ui.shadcn.com/docs/changelog for breaking changes in underlying primitives BEFORE re-adding a block. NEVER expect block updates to flow in via `npm update` ; the ownership doctrine is non-negotiable.

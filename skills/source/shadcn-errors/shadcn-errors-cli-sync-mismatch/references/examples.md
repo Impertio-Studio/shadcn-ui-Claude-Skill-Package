@@ -17,7 +17,7 @@ git status
 # On branch main
 # nothing to commit, working tree clean
 
-git switch -c chore/sync-calendar
+git switch -c <branch>   # per your repository's branch convention
 ```
 
 Step 2 : probe the change.
@@ -78,7 +78,7 @@ Step 6 : test and commit.
 ```bash
 pnpm test
 git add components/ui/calendar.tsx
-git commit -m "chore: sync Calendar with shadcn@latest for react-day-picker v9 fix"
+git commit -m "<sync Calendar with shadcn@latest for react-day-picker v9 fix, in your repository's commit format>"
 ```
 
 Lesson : because the local edit was a single default value on an
@@ -298,7 +298,7 @@ Step 1 : clean tree, branch.
 
 ```bash
 git status                            # clean
-git switch -c chore/migrate-icons
+git switch -c <branch>   # per your repository's branch convention
 ```
 
 Step 2 : list available targets.
@@ -344,7 +344,7 @@ pnpm add @radix-ui/react-icons
 pnpm remove lucide-react
 pnpm test
 git add -A
-git commit -m "chore: migrate icon library to @radix-ui/react-icons"
+git commit -m "<migrate icon library to @radix-ui/react-icons, in your repository's commit format>"
 ```
 
 Caveat : if your `*-extensions.tsx` files also import lucide icons,
@@ -370,12 +370,12 @@ Step 1 : extract the custom variants to `button-extensions.tsx`
 (see Example 2 above). Commit this refactor on its own branch.
 
 ```bash
-git switch -c refactor/button-extract-variants
+git switch -c <branch>   # per your repository's branch convention
 # (write components/ui/button-extensions.tsx as in Example 2,
 #  remove the warning/success/info entries from components/ui/button.tsx)
 pnpm test
 git add components/ui/button.tsx components/ui/button-extensions.tsx
-git commit -m "refactor: extract custom Button variants to button-extensions.tsx"
+git commit -m "<extract custom Button variants to button-extensions.tsx, in your repository's commit format>"
 ```
 
 Step 2 : merge the refactor (PR review confirms nothing visual
@@ -385,13 +385,13 @@ version except for tiny incidental edits.
 Step 3 : sync.
 
 ```bash
-git switch -c chore/sync-button
+git switch -c <branch>   # per your repository's branch convention
 pnpm dlx shadcn@latest add button --diff
 # Diff is now manageable : only the upstream security fix lines change.
 pnpm dlx shadcn@latest add button --overwrite
 pnpm test
 git add components/ui/button.tsx
-git commit -m "chore: sync Button with shadcn@latest for security fix"
+git commit -m "<sync Button with shadcn@latest for security fix, in your repository's commit format>"
 ```
 
 The customizations in `button-extensions.tsx` are untouched. Every

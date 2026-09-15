@@ -161,7 +161,7 @@ The already-installed components have the `default` style's classes and variant 
 
 ```bash
 # 1. snapshot the project on a branch
-git checkout -b chore/style-migration
+git checkout -b <branch>   # per your repository's branch convention
 
 # 2. record the list of installed components and blocks
 pnpm dlx shadcn@latest info > installed-before.txt
